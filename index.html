@@ -549,11 +549,12 @@
      <script>
         mapboxgl.accessToken = 'pk.eyJ1Ijoiam9obnBvcHMiLCJhIjoiY2t6cHFzd3QyMDA1OTJucGtyY3JtcHp0ciJ9.kIuUdUDIrA-6MvP3Z8XQDg';
         var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [-71.060982, 43.35725],
-        zoom: 18
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-71.060982, 43.35725],
+            zoom: 9
         });
+        map.addControl(new mapboxgl.NavigationControl());
         </script>
 </body>
 </html>
